@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Banking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 menu">
+                <div class="d-flex flex-column menu-container">
+                    <div class="p-2 logo-container">
+                        <img src="./assets/bank.svg" alt="logo" style="width: 30px; height: 30px;">
+                        <p style="font-family: 'Poppins', sans-serif; display: inline-block; margin: 15px; font-size: 17px; font-weight: bold;">WasteBank</p>
+                    </div>
+                    <button id="hamburger" class="hamburger"><i class="fas fa-bars" style="color: white;"></i></button>
+                    <div class="menu-items" id="menu-items">
+                        <div class="p-3">
+                            <i class="fa fa-home"></i> Dashboard
+                        </div>
+                        <div class="p-3">
+                            <i class="fa fa-user"></i> Customer
+                        </div>
+                        <div class="p-3">
+                            <i class="fa fa-list-alt"></i> Category
+                        </div>
+                        <div class="p-3">
+                            <i class="fa fa-shopping-bag"></i> Transaction
+                        </div>
+                        <div class="p-3">
+                            <i class="fa fa-map-marker-alt"></i> Pick-up
+                        </div>
+                        <div class="p-3">
+                            <i class="fa fa-chart-line"></i> Stock
+                        </div>
+                        <div class="p-3">
+                            <i class="fa fa-wallet"></i> Financial
+                        </div>
+                        <div class="p-3" style="margin-bottom: 12px;">
+                            <i class="fa fa-file"></i> Report
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <img src="./assets/settings.svg" alt="icon" style="width: 30px; height: 30px;">
+                        <p style="font-size: 13px; display: inline-block;">Welcome,</p>
+                        <p style="font-size: 15px; position: relative; margin-left: 35px;">WB Bersinar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-7 main">
+                <div class="container">
+                    <div class="row header">
+                        <div class="col">
+                            <h4 style="font-weight: bold;">Overview</h4>
+                        </div>
+                        <div class="col">
+                            <input type="search" placeholder="Search..">
+                        </div>
+                    </div>
+                    <div class="row numbers justify-content-center">
+                        <div class="col customer">
+                            <img src="./assets/user.svg" alt="user icon" style="width: 30px; height: 30px; margin: 5px; margin-top: 20px; position: absolute;">
+                            <div style="margin: 15px; margin-left: 50px;">
+                                <h6>Customer</h6>
+                                <h3 style="font-weight: bold;">1,300</h3>
+                            </div>
+                        </div>
+                        <div class="col employees">
+                            <img src="./assets/group.svg" alt="group icon" style="width: 30px; height: 30px; margin: 5px; margin-top: 20px; position: absolute;">
+                            <div style="margin: 15px; margin-left: 50px;">
+                                <h6>Employees</h6>
+                                <h3 style="font-weight: bold;">42</h3>
+                            </div>
+                        </div>
+                        <div class="col request">
+                            <img src="./assets/shopping-bag.svg" alt="bag icon" style="width: 30px; height: 30px; margin: 5px; margin-top: 20px; position: absolute;">
+                            <div style="margin: 15px; margin-left: 50px;">
+                                <h6>Request</h6>
+                                <h3 style="font-weight: bold;">128</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row chart justify-content-center">
+                        <div class="col-7 info-chart">
+                            <h5 style="margin: 10px; font-weight: bold;">Customer based region</h5>
+                            <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                                <div>
+                                    <i class="fas fa-location-arrow"></i> Voluptatum
+                                    <br>
+                                    <i class="fas fa-location-arrow"></i> Rajasthan
+                                    <br>
+                                    <i class="fas fa-location-arrow"></i> Straject
+                                    <br>
+                                    <i class="fas fa-location-arrow"></i> Marnets
+                                </div>
+                                <img src="./assets/20665172.jpg" alt="" style="width: 60px; height: 60px; margin: 30px;">
+                            </div>
+                        </div>
+                        <div class="col-3 info-diagram">
+                            <div style="margin-top: 13px;">
+                                <p style="font-size: 12px;">Total category waste</p>
+                                <h6 style="font-weight: bold;">20</h6>
+                                <p style="font-size: 12px;">Total waste in</p>
+                                <h6 style="font-weight: bold;">564kg</h6>
+                                <p style="font-size: 12px;">Total waste out</p>
+                                <h6 style="font-weight: bold;">1205kg</h6>
+                            </div>
+                        </div>
+                        <div class="graph">
+                            <h5 style="font-weight: bold; margin-top: 10px;">Waste in & out</h5>
+                            <img src="./assets/SPD_production_graph.png" alt="" style="width: 80%; height: 100px;">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-3 info">
+                <div class="row" style="margin:10px; margin-top: 30px; margin-bottom: 30px; color: white; font-family: 'Poppins', sans-serif;">
+                    <div class="col-4"><i class="fa fa-bell" style="color:white"></i></div>
+                    <div class="col">
+                        Captari Tyas <img src="./assets/user.svg" alt="user profile logo" style="width: 30px; height: 30px; margin-left: 10px;">
+                    </div>
+                </div>
+                <div class="account d-flex align-items-center justify-content-center flex-column">
+                    <h6 style="font-weight: bold;"> ID 122 887 552</h6>
+                    <br>
+                    <h2 style="font-weight: bold;">$2,920</h2>
+                </div>
+                <div class="d-flex flex-column align-items-center">
+                    <h5 style="font-family: 'Poppins', sans-serif; color: white;">Last Transaction</h5>
+                    <div class="p-1 deposits">
+                        <h6>Deposit Waste</h6>
+                        <h6>$291</h6>
+                    </div>
+                    <div class="p-1 deposits">
+                        <h6>Deposit Waste</h6>
+                        <h6>$691</h6>
+                    </div>
+                    <div class="p-1 deposits">
+                        <h6>Transfer Deposit</h6>
+                        <h6>$80</h6>
+                    </div>
+                    <div class="p-1 deposits">
+                        <h6>Deposit Waste</h6>
+                        <h6>$256</h6>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
